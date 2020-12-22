@@ -19,7 +19,7 @@
 
 完整示例项目 https://github.com/dynamic-datasource/dynamic-datasource-samples/tree/master/tx-local-sample
 
-1. 在需要事务的方法上加@DSTran.
+1. 在需要事务的方法上加@DSTransactional.
 ```java
 
 
