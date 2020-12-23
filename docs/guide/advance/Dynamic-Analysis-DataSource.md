@@ -69,4 +69,51 @@ public class DsHeaderProcessor extends DsProcessor {
 ```
 
 
+## 动态解析使用方式
+1. 在类下面的方法使用
+```java
+public class UserService{
+    @DS("#user.tenantName")//使用spel从复杂参数获取
+    public List selecSpelByTenant(User user){
+    }
+}
+```
+
+2. 在接口下面的方法使用
+```java
+public interface UserMapper{
+    // 前缀可以是p0,a0
+    @DS("#p0.tenantName")
+    public List selecSpelByTenant(User user);
+}
+```
+
+对于在接口下面的使用, 由于编译器的默认配置没有将接口参数的元数据写入字节码文件中.  
+所以spring el会无法识别参数名称, 只能用默认的参数命名方式
+
+1. 第一个参数: p0,a0,(加入-parameter后,可以使用参数具体的名字,例如这里的#user)
+2. 第二个参数: p1,a1
+3. 第三个参数: P2,a2
+
+可以通过修改maven配置和java编译配置将接口参数信息写入字节码文件  
+maven配置:
+```xml
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <!-- 想启用  <parameters>true</parameters> 的maven编译最低版本为:3.6.2 -->
+        <version>3.6.2</version>
+        <configuration>
+            <source>${java.version}</source>
+            <target>${java.version}</target>
+            <parameters>true</parameters>
+        </configuration>
+    </plugin>
+```
+
+idea java编译配置: ` -parameters`  
+> java 支持-parameters的最低版本为 1.8
+
+![](./java-dynamic-parse.png)
+
 
