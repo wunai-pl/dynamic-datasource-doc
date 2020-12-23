@@ -154,6 +154,15 @@ function genGuideSidebar(isZh) {
       ],
     },
     {
+      title: isZh ? "事务专栏" : "Transaction",
+      collapsable: false,
+      children: [
+        "tx/Questions",
+        "tx/Local",
+        "tx/Seata",
+      ],
+    },
+    {
       title: "FAQ",
       collapsable: false,
       children: [
