@@ -128,7 +128,6 @@ function genGuideSidebar(isZh) {
         "integration/Jndi",
         "integration/P6spy",
         "integration/Quartz",
-        "integration/Seata",
         "integration/ShardingJdbc",
       ],
     },
@@ -168,7 +167,6 @@ function genGuideSidebar(isZh) {
       children: [
         "faq/Questions",
         "faq/Failed-Switch-Database",
-        "faq/Transation-Questions",
         "faq/Debug-SourceCode",
       ],
     },
