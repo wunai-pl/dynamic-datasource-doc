@@ -15,13 +15,14 @@ footer: Apache License 2.0 | © 2018-2020 baomidou
 
 QQ群号:1132021421 <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=ded31006508b57d2d732c81266dd2c26e33283f84464e2c294309d90b9674992"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="dynamic-sring-boot-starter" title="dynamic-sring-boot-starter"></a> 需要付费10元入群，有问题会尽快解答,ISSUE仍会认真回答。 
 
-### 当前最新版本
+### 当前最新版本 <a href="http://mvnrepository.com/artifact/com.baomidou/dynamic-datasource-spring-boot-starter" target="_blank">
+<img src="https://img.shields.io/maven-central/v/com.baomidou/dynamic-datasource-spring-boot-starter.svg" ></a>
 
 ```xml
 <dependency>
     <groupId>com.baomidou</groupId>
     <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
-    <version>3.2.1</version>
+    <version>${version}</version>
 </dependency>
 ```
 
