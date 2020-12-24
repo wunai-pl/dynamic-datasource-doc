@@ -23,7 +23,7 @@
 <dependency>
     <groupId>com.alibaba</groupId>
     <artifactId>druid-spring-boot-starter</artifactId>
-    <version>1.2.2</version>
+    <version>${version}</version>
 </dependency>
 ```
 

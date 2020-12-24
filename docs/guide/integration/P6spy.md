@@ -22,7 +22,7 @@ select * from user where age>6
 <dependency>
     <groupId>p6spy</groupId>
     <artifactId>p6spy</artifactId>
-    <version>3.9.1</version>
+    <version>${version}</version>
 </dependency>
 ```
 

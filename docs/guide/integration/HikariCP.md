@@ -15,7 +15,7 @@
 <dependency>
     <groupId>com.zaxxer</groupId>
     <artifactId>HikariCP</artifactId>
-    <version>3.4.5</version>
+    <version>${version}</version>
 </dependency>
 ```
 

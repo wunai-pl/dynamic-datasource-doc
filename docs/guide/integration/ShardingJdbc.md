@@ -20,12 +20,12 @@
 <dependency>
     <groupId>org.apache.shardingsphere</groupId>
     <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
-    <version>4.1.1</version>
+    <version>${version}</version>
 </dependency>
 <dependency>
     <groupId>org.apache.shardingsphere</groupId>
     <artifactId>sharding-jdbc-spring-namespace</artifactId>
-    <version>4.1.1</version>
+    <version>${version}</version>
 </dependency>
 ```
 
