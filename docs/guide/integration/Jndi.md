@@ -4,6 +4,7 @@
 spring:
   datasource:
     dynamic:
-      master:
-        jndi_name: xxx
+      datasource: 
+        master:
+          jndi_name: xxx
 ```
